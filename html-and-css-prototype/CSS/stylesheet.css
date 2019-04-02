@@ -1,34 +1,34 @@
 /* Global resets */
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-	color: #424242;
-	line-height: 1.4;
-}
+  font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+  color: #424242;
+  line-height: 1.4;
+  }
 
 /* Fonts */
 h1 {
-	font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
-	font-size: 2.5em;
-	font-weight: bold;
+  font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
+  font-size: 2.5em;
+  font-weight: bold;
 }
 
 .container {
-	margin: 2em auto;
-	max-width: 630px;
-	text-align: center;
+  margin: 2em auto;
+  max-width: 630px;
+  text-align: center;
 }
 
 /* The following font information and color codes are provided for you.  They do not match the prototype exactly, but they are fine to use for the assignment and doing so does not count against you.  They are simply meant to help you save time.  We would like everyone to have as close to a pixel-perfect match to the prototype as possible.  If you do find a font/color that matches more precisely, please share it with the team so we can improve the activity for future applicants.  Thank you!  Happy coding!
 
-	FONTS:
-	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-	font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
+  FONTS:
+  font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+  font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
 
   COLORS:
   blue: #20A1D4;
@@ -40,3 +40,98 @@ h1 {
 */
 
 /* Your CSS code goes here */
+
+/* Css code for first section and a triagle shape below the section */
+
+.box1 {
+  width: 260px;
+  margin: auto;
+  padding: 15px;
+  background-color: #424242;
+  color: white;
+  font-size: 14px;
+  border-radius: 3px;
+}
+.box1::after {
+  width: 0.5%;
+  height: 2.5%;
+  background-color: #424242;
+  position: absolute;
+  top: 75%;
+  left: 57%;
+  content: '';
+  transform: rotate(45deg);
+  margin-top: -17px;
+}
+
+/* code for red bar section and the text section */
+
+.box2,.box3{
+  width: 260px;
+  height: auto;
+  margin: 10px auto;
+  border: 1px solid #eaeaea;
+}
+.red-bar {
+  width: 75%;
+  height: 10px;
+  background-color: #EF5F3C;
+}
+span {
+  color: #EF5F3C;
+  font-weight: 600;
+}
+.text {
+  padding: 15px;
+  text-align: left;
+  border-top: 1px solid #eaeaea;
+  font-size: 14px;
+  color: #777;
+}
+.price {
+  border: 1px solid #eaeaea;
+  border-radius: 3px;
+  width: 46%;
+  padding: 12px;
+  margin-top: 10px;
+  font-weight: 900;
+  box-shadow: 0.25px -0.25px grey;
+  color: #424242;
+}
+.price-tab {
+  width: 46%;
+  background-color: #1CBC2C;
+  padding: 15px;
+  color: white;
+  margin-top: 10px;
+  margin-left: 12px;
+  border-radius: 3px;
+  border: 1px solid #1CBC2C;
+  font-weight: 600;
+}
+
+i {
+  font-size: 12px;
+  color: #20A1D4;
+  font-weight: 600;
+}
+
+/* End buttons section css code */
+.box3 {
+	border: none;
+}
+button {
+  width: 46.5%;
+  height: auto;
+  padding: 8px;
+  border: 1px solid #eaeaea;
+  background-color: white;
+  border-radius: 3px;
+  color: #777;
+  box-shadow: -0.25px 0.25px grey;
+  font-weight: 600;
+	font-size: 12px;
+}
+#gap {
+	margin-left: 13px;
+}
